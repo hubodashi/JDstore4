@@ -11,31 +11,31 @@ class Admin::ProductsController < ApplicationController
     @product = Product.new
   end
 
- def edit
-   @product = Product.find(params[:id])
- end
+  def edit
+    @product = Product.find(params[:id])
+  end
 
- def update
-   @product = Product.find(params[:id])
+  def update
+    @product = Product.find(params[:id])
 
-   if @product.update(product_params)
-     redirect_to admin_products_path
-   else
-     render :edit
-   end
+    if @product.update(product_params)
+      redirect_to admin_products_path
+    else
+      render :edit
+    end
 
- end
+  end
 
- def create
-   @product = Product.new(product_params)
+  def create
+    @product = Product.new(product_params)
 
-   if @product.save
-     redirect_to admin_products_path
-   else
-     render :new
-   end
+    if @product.save
+      redirect_to admin_products_path
+    else
+      render :new
+    end
 
- end
+  end
 
   def move_up
      @product = Product.find(params[:id])
