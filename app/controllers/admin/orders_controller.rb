@@ -5,12 +5,11 @@ before_action :authenticate_user!
 before_action :admin_required
 
   def index
-    @orders = Order.order("id DESC")
+    @orders = Order.order("id DESC").paginate(:page => params[:page], :per_page => 5)
   end
   def show
-    binding.pry
    @order = Order.find(params[:id])
-   @product_lists = @order.product_lists
+   @product_lists = @order.product_lists.paginate(:page => params[:page], :per_page => 5)
  end
    def ship
     @order = Order.find(params[:id])
