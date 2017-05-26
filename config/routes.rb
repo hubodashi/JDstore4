@@ -12,6 +12,13 @@ Rails.application.routes.draw do
     member do
       post :add_to_cart
     end
+    collection do
+     get :search
+    end
+    member do
+     post :add_to_favorite
+     post :quit_favorite
+    end
   end
   namespace :admin do
      resources :products do
