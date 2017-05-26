@@ -16,3 +16,491 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
  @import "font-awesome";
+
+
+
+
+ //---------Navbar---------
+
+  .navbar-default {
+      background-color: #212121;
+      border-color: #212121;
+      margin-bottom: 0;
+      border-radius: 0;
+  }
+
+  .navbar-default .navbar-brand {
+      color: #EF6C00;
+      padding: 10px 15px;
+      line-height: 30px;
+  }
+
+  .navbar-default .navbar-brand:hover,
+  .navbar-default .navbar-brand:focus {
+      color: #FF6F00;
+      background-color: transparent;
+  }
+
+  .navbar-default .navbar-nav > li > a {
+      color: #EF6C00;
+  }
+
+  .navbar-default .navbar-nav > li > a:hover,
+  .navbar-default .navbar-nav > li > a:focus {
+      color: #FF6F00;
+      background-color: transparent;
+  }
+
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus {
+      color: #FF6F00;
+      background-color: #FFE0B2;
+  }
+
+  .navbar-default .navbar-nav > .open > a,
+  .navbar-default .navbar-nav > .open > a:focus,
+  .navbar-default .navbar-nav > .open > a:hover {
+      background-color: #FFE0B2;
+      color: #212121;
+  }
+  body{
+  font-family:simsun, STSong;
+}
+.carousel-control{
+  //background-color: rgba(250, 250, 250, 0.39);
+}
+
+.form-control{
+  border: 2px solid #B28435;
+}
+
+.navbar-form .text{
+  color: #B28435;
+}
+
+
+.search{
+  //background-color: #B28435 !important;
+  //border-color: #B28435 !important;
+}
+.search .form-group{
+  margin-bottom: 0;
+}
+
+.btn-search{
+  color: #fff !important;
+}
+
+.search-hot ul{
+  list-style: none;
+  padding-left: 0;
+
+}
+.search-hot li{
+  display: inline-block;
+  //margin-right: 12px;
+  margin: 5px;
+
+}
+.search-hot li a{
+  color: #999;
+  text-decoration: none;
+
+}
+
+.product-index li{
+  font-size: 16px;
+  list-style: none; //将默认的列表符号去掉、、//
+  float:left;
+  padding-right: 20px;
+  margin-left: -20px;
+  margin-right: 20px;
+  font-weight: bold;
+}
+.product-index a{
+  text-decoration:none; //去掉超链接的下划线、、、//
+}
+.product-index li:hover{
+  color: #B28435;
+  background:#fff;
+}
+.input-group-btn button{
+  //font-size: 16px;
+ letter-spacing: 4px;
+  //border: 1px solid #B28435;
+  background-color: #B28435 !important;
+  color: #fff;
+  border-color: #B28435 !important;
+}
+.carousel-BC1{
+  //height: 111px;
+  background: rgb(202, 40, 46);
+}
+.carousel-BC2{
+  //height: 111px;
+  background-color: rgb(255, 165, 84);
+}
+.carousel-BC3{
+  //height: 111px;
+  background-color: rgb(219, 218, 223);
+}
+.carousel-BC4{
+  //height: 111px;
+  background-color: rgb(0, 42, 55);
+}
+
+
+h3{
+  color: #B28435;
+  margin-bottom: -15px;
+}
+
+ hr{
+   border-top: 2px solid #B28435;
+
+ }
+
+
+.sort-img{
+  width: 100%;
+}
+.item_hover{
+  position:relative;
+  float:left;
+  width:181px;
+  //height:220px;
+  border:1px solid #f2f2f2;
+  overflow:hidden;
+  background:#fff;
+}
+.item_hover a{
+text-decoration: none;
+color: #fff;
+}
+.item_buy {
+ position:absolute;
+ bottom:-40px;
+ left:0;
+ width:100%;
+ height:40px;
+ background:#fe575f;
+ color:#fff;
+ text-align:center;
+ -webkit-transition:bottom .25s ease;
+ transition:bottom .25s ease     ///购物车////
+}
+
+.item_buy span{
+  vertical-align: middle;
+  position:relative;
+   top:25%;
+   //transform:translateY(-50%);
+}
+
+.item_hover:hover .item_buy {
+	bottom:0
+}
+
+.item_hover .sort-img {
+  vertical-align:middle;
+  -webkit-transform:translateY(0);
+  transform:translateY(0);
+  -webkit-transition:-webkit-transform .25s ease;
+  transition:-webkit-transform .25s ease;
+  transition:transform .25s ease;
+  transition:transform .25s ease,-webkit-transform .25s ease
+}
+
+.item_hover:hover .sort-img {
+	-webkit-transform:translateY(-10px);
+	transform:translateY(-10px) //图片网上移动10px
+}
+
+.floor_goods {
+margin:0 10px;
+text-align:center;
+color: #6a6a6a;
+
+}
+.floor_goods .text_point {
+//padding:5px 0 0;
+//max-width:100%;
+//_width:178px;
+
+font-size: 12px;
+white-space:nowrap;
+text-overflow:ellipsis;
+overflow:hidden;
+display:block;
+}
+
+.tm-price{
+text-decoration: line-through;
+//font-size: 14px;
+}
+
+.redge {
+	float:left;
+	background:#f4f4f4;
+	overflow:hidden;
+}
+.rHot {
+	margin:25px 0 0 15px;
+	height:143px;
+	overflow:hidden;
+}
+
+.redge ul {
+    padding-left: 20px;
+    list-style: none;
+}
+
+.rHot li a {
+  text-decoration:none;
+	color:#333333;
+	height:55px;
+	width:55px;
+	display:block;
+	font-size:12px;
+	overflow:hidden;
+}
+.rHot li a:hover {
+	//color:#FFF;
+}
+.rHot li {
+	margin:4px;
+	_margin:3px;
+	width:55px;
+	height:55px;
+	background:url(/images/index_icon_new.png) no-repeat;
+	text-align:center;
+	line-height:55px;
+	float:left;
+}
+.rHot li:hover {
+	background:url(/images/index_icon_new.png) no-repeat 0 -241px;
+}
+
+.da-thumbs {
+	list-style: none;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+.da-thumbs li {
+  float: left;
+  margin: 0.4%;
+  position: relative;
+   width: 24%;
+}
+
+.da-thumbs-2 {
+	list-style: none;
+	position: relative;
+}
+
+.da-thumbs-2 .li-left {
+  position: relative;
+   width: 28%;
+ }
+
+.da-thumbs-2 .li-rigth {
+  position: relative;
+   width: 50%;
+   color: #B28435;
+}
+
+.li-rigth .text{
+  margin-top: -8px;
+}
+
+//product.index///
+
+.order{
+background-color: #eee;
+height: 38px;
+padding: 9px 8px 0 8px;
+//display: inline;
+}
+.order .col-md-8{
+  padding:0;
+}
+.order a{
+  color: #666;
+  //font-size: 12px;
+  text-align: center;
+  text-decoration:none; //去掉超链接的下划//
+  border: 1px solid #DDD;
+  padding: 5px 9px 5px 9px;
+  //position: relative;
+  background: #fff;
+}
+.order a:hover{
+  color: #B28435;
+  border-color: #B28435
+}
+//-------product----------
+  .product-list{
+
+}
+.product-list ul{
+  //margin-left: -20px; //商品列表顶格对齐//
+  //margin-top: 20px;
+  list-style: none;
+  padding: 0 2px 0 2px;
+}
+.product-list li{
+  margin-top: 20px;
+  padding: 0;
+  width: 224px;
+  height: 340px;
+  //margin-right: 10px;
+  //float: left;
+  list-style: none;
+  display: inline-block;
+  //border: 1px solid #DDD;
+}
+.product-list p{
+  margin-bottom: 5px;
+  padding: 0 5px 0 5px;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  overflow: hidden;
+  width: 100%;
+}
+
+
+.product-price{
+  margin: 7px 7px;
+  //border-width: 2px;
+  //border-style: groove;
+  border:1px solid #fff;
+  //overflow:hidden;
+  height: 317px;
+  width: 208px;
+}
+.product-price:hover{
+  border-color: #eee;//鼠标放置在btn上的边框颜色
+}
+.product-price .price{ //product 商品列表的价格样式///
+  color: #e4393c;
+  font-size: 20px;
+}
+.product-price .describe{  //product 商品列表的描述字体样式///
+  color: #666;
+  font-size: 12px;
+}
+.product-price .evaluate{ ///product 商品列表的已有评价字体样式///
+  color: #a7a7a7;
+  font-size: 12px;
+  //margin-top: 8px;
+}
+
+
+.product-price .cart{
+  border: 1px solid #DDD;
+  float: left;
+  width: 50%;
+  padding: 5px 0px 5px 0px;
+}
+.product-price .cart a{
+  //border: 1px solid #DDD;
+  padding: 5px 6px 5px 6px;
+  //position: relative;
+  background: #fff;
+  color: #B28435;
+  text-decoration:none; //去掉超链接的下划//
+  //font-size: 14px;
+  //margin: 4px 4px;
+  width: 50%;
+}
+.product-price .cart:hover{ ///触发 ，收藏按钮鼠标放上去显示的颜色和字体//
+  color: #B28435;
+  border-color: #B28435;
+}
+
+
+.product-img{
+  width: 100%; //限定照片显示的大小///
+}
+
+//京东footer//
+/*.footer {
+    background-color: #c4b7a4;
+    //padding: 16px 10px 6px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+}
+.footer .mod_help_nav{
+  display: inline-block;
+  //display: inline;
+  margin-right:  0;
+  text-align: left;
+}
+.footer  ul{
+  width: 100%;
+  height: 160px;
+}
+.footer  ul,.footer li{
+      list-style: none;
+      margin-right: 30px;
+      padding: 0;
+    }
+    */
+
+    .footer {
+      display: block;
+    	background: #f5f5f5;
+    	height: 100%;
+    	padding-bottom: 30px;
+    	width: 100%;
+    	border-bottom: 1px solid #CCCCCC;
+    	border-top: 1px solid #DDDDDD;
+      background-position: center 80%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      position: relative;
+      vertical-align: bottom;
+    }
+
+    .footer .container-fluid {
+      width: 100%;
+     padding-right: 10px;
+     padding-left: 30px;
+
+    }
+    .footer p {
+    	//margin: 0;
+    }
+    .footer img {
+    	max-width: 100%;
+    }
+    .footer h4 {
+    	//border-bottom: 2px solid #CC8902;
+    	//color: #54697E;
+    	font-size: 18px;
+    	font-weight: 600;
+    	line-height: 27px;
+    	padding: 15px 0 10px;
+    	text-transform: uppercase;
+    }
+    .footer ul {
+    	font-size: 13px;
+    	list-style-type: none;
+    	margin-left: 0;
+    	padding-left: 0;
+    	margin-top: 15px;
+    	//color: #7F8C8D;
+
+    }
+    .footer ul li a {
+    	padding: 0 0 5px 0;
+    	display: block;
+    }
+    .footer a {
+    	color: #666;
+    }

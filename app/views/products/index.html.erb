@@ -1,17 +1,439 @@
-<div class="row">
-  <% @products.each do |product| %>
-    <div class="col-xs-6 col-md-3">
-      <%= link_to product_path(product) do %>
-        <% if product.image.present? %>
-          <%= image_tag(product.image.thumb.url, class: "thumbnail") %>
-        <% else %>
-          <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
-        <% end %>
-      <% end %>
-      <%= product.title %> ￥ <%= product.price %>
+<!-- 图片滚动 -->
+<div class="col-md-12">
+  <div class="row box">
+      <div id="myCarousel" class="carousel slide">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+     </ol>
+     <div class="carousel-inner">
+        <div class="item active">
+         <a href="#">
+          <img src="https://ws4.sinaimg.cn/large/006tNbRwgy1ffy18216nrj31hc0zkwxs.jpg"  alt="First slide">
+          <div class="carousel-caption"></div>
+         </a>
+        </div>
+        <div class="item">
+         <a href="#">
+          <img src="https://ws3.sinaimg.cn/large/006tNbRwgy1ffy17c6etzj31hc0zk1dl.jpg"  alt="Second slide">
+          <div class="carousel-caption"></div>
+         </a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="https://ws3.sinaimg.cn/large/006tNbRwgy1ffy1bww1yhj31hc0ukwud.jpg"  alt="Third slide">
+            <div class="carousel-caption"></div>
+          </a>
+        </div>
+      </div>
+
+     <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+       <span class="glyphicon glyphicon-chevron-left"></span>
+     </a>
+     <a class="carousel-control right" href="#myCarousel" data-slide="next">
+       <span class="glyphicon glyphicon-chevron-right"></span>
+     </a>
+      </div>
     </div>
-  <% end %>
 </div>
-    <div class="text-center">
-      <%= will_paginate @products %>
+<!-- 原项目 -->
+
+
+   <!-- <div class="row">
+     <% @products.each do |product| %>
+       <div class="col-xs-6 col-md-3">
+         <%= link_to product_path(product) do %>
+           <% if product.image.present? %>
+             <%= image_tag(product.image.thumb.url, class: "thumbnail") %>
+           <% else %>
+             <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
+           <% end %>
+         <% end %>
+         <%= product.title %> ￥ <%= product.price %>
+       </div>
+     <% end %>
+   </div> -->
+
+
+
+  <div class="container">
+
+   <h3 class="text-left"><img src="https://ws2.sinaimg.cn/large/006tKfTcgy1ffytq03ukpj301s01st8h.jpg" height="24" alt="">&nbsp;牛仔范</h3>
+   <hr>
+  </div>
+ <div class="product">
+   <div class="container">
+     <div class="row">
+       <div class="col-md-3">
+           <img class="sort-img" src="https://ws1.sinaimg.cn/large/006tKfTcgy1ffyscyvcryj30zc1hc1kx.jpg" alt="" />
+       </div>
+       <div class="col-md-6">
+         <div class="col-md-4">
+           <div class="row">
+             <div class="item_hover">
+               <a href="#"><img class="sort-img" src="https://ws1.sinaimg.cn/large/006tKfTcgy1ffysnko19ej30by0byjs9.jpg" alt="" /></a>
+               <div class="floor_goods">
+                 <span class="text_point">男士牛仔服</span>
+                 <span class="tm-price">￥888</span> <span>促销价</span> <span style="color:#c00">￥688</span>
+               </div>
+               <a target="_blank" href="https://ws1.sinaimg.cn/large/006tKfTcgy1ffysia6y0cj30ry0zkjxi.jpg" class="item_buy">
+                 <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;加入购物车</span>
+               </a>
+             </div>
+           </div>
+         </div>
+         <div class="col-md-4">
+           <div class="row">
+             <div class="item_hover">
+               <a href="#"><img class="sort-img" src="https://ws1.sinaimg.cn/large/006tKfTcgy1ffysnko19ej30by0byjs9.jpg" alt="" /></a>
+               <div class="floor_goods">
+                 <span class="text_point">男士牛仔服</span>
+                 <span class="tm-price">￥888</span> <span>促销价</span> <span style="color:#c00">￥688</span>
+               </div>
+               <a target="_blank" href="https://gate.jd.com/InitCart.aspx?pid=10108886864&amp;pcount=1&amp;ptype=1" class="item_buy">
+                 <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;加入购物车</span>
+               </a>
+             </div>
+           </div>
+         </div>
+         <div class="col-md-4">
+           <div class="row">
+             <div class="item_hover">
+               <a href="#"><img class="sort-img" src="https://ws1.sinaimg.cn/large/006tKfTcgy1ffysnko19ej30by0byjs9.jpg" alt="" /></a>
+               <div class="floor_goods">
+                 <span class="text_point">男士牛仔服</span>
+                 <span class="tm-price">￥888</span> <span>促销价</span> <span style="color:#c00">￥688</span>
+               </div>
+               <a target="_blank" href="https://gate.jd.com/InitCart.aspx?pid=10108886864&amp;pcount=1&amp;ptype=1" class="item_buy">
+                 <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;加入购物车</span>
+               </a>
+             </div>
+           </div>
+         </div>
+         <div class="col-md-4">
+           <div class="row">
+             <div class="item_hover">
+               <a href="#"><img class="sort-img" src="https://ws1.sinaimg.cn/large/006tKfTcgy1ffysnko19ej30by0byjs9.jpg" alt="" /></a>
+               <div class="floor_goods">
+                 <span class="text_point">男士牛仔服</span>
+                 <span class="tm-price">￥888</span> <span>促销价</span> <span style="color:#c00">￥688</span>
+               </div>
+               <a target="_blank" href="https://gate.jd.com/InitCart.aspx?pid=10108886864&amp;pcount=1&amp;ptype=1" class="item_buy">
+                 <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;加入购物车</span>
+               </a>
+             </div>
+           </div>
+         </div>
+         <div class="col-md-4">
+           <div class="row">
+             <div class="item_hover">
+               <a href="#"><img class="sort-img" src="https://ws1.sinaimg.cn/large/006tKfTcgy1ffysnko19ej30by0byjs9.jpg" alt="" /></a>
+               <div class="floor_goods">
+                 <span class="text_point">男士牛仔服</span>
+                 <span class="tm-price">￥888</span> <span>促销价</span> <span style="color:#c00">￥688</span>
+               </div>
+               <a target="_blank" href="https://gate.jd.com/InitCart.aspx?pid=10108886864&amp;pcount=1&amp;ptype=1" class="item_buy">
+                 <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;加入购物车</span>
+               </a>
+             </div>
+           </div>
+         </div>
+         <div class="col-md-4">
+           <div class="row">
+             <div class="item_hover">
+               <a href="#"><img class="sort-img" src="https://ws1.sinaimg.cn/large/006tKfTcgy1ffysnko19ej30by0byjs9.jpg" alt="" /></a>
+               <div class="floor_goods">
+                 <span class="text_point">男士牛仔服</span>
+                 <span class="tm-price">￥888</span> <span>促销价</span> <span style="color:#c00">￥688</span>
+               </div>
+               <a target="_blank" href="https://gate.jd.com/InitCart.aspx?pid=10108886864&amp;pcount=1&amp;ptype=1" class="item_buy">
+                 <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;加入购物车</span>
+               </a>
+             </div>
+           </div>
+         </div>
+       </div>
+
+           <div class="col-md-3">
+               <div class="redge">
+                 <ul class="rHot ">
+                   <li><a href="#">牛仔裤</a></li>
+                    <li><a name="sfbest_hp_hp_floor2_Keywords2" class="trackref" href="/productlist/search?inputBox=1&amp;categoryId=0&amp;keyword=%E7%8C%AA%E8%82%89" target="_blank">牛仔帽</a></li>
+                    <li><a name="sfbest_hp_hp_floor2_Keywords3" class="trackref" href="/productlist/search?inputBox=1&amp;categoryId=0&amp;keyword=%E8%82%8B%E6%8E%92" target="_blank">皮靴</a></li>
+                    <li><a name="sfbest_hp_hp_floor2_Keywords4" class="trackref" href="/productlist/search?inputBox=1&amp;categoryId=0&amp;keyword=%E7%BE%8A%E8%82%89#trackref" target="_blank">牛仔上衣</a></li>
+                    <li><a name="sfbest_hp_hp_floor2_Keywords5" class="trackref" href="/productlist/search?inputBox=1&amp;categoryId=0&amp;keyword=%E7%A6%BD%E7%B1%BB" target="_blank">皮带</a></li>
+                    <li><a name="sfbest_hp_hp_floor2_Keywords6" class="trackref" href="/productlist/search/?categoryId=312&amp;keyword=%E9%B3%95%E9%B1%BC&amp;o=saleNum%3Adesc" target="_blank">配饰</a></li>
+                  </ul>
+               </div>
+                             <img class="sort-img" src="https://ws1.sinaimg.cn/large/006tKfTcgy1ffytmma11bj30bo07sjsh.jpg" alt="" />
+             </div>
+           </div>
+         </div>
+   </div>
+
+   <div class="container">
+     <h3 class="text-left"><img src="https://ws2.sinaimg.cn/large/006tKfTcgy1ffyu7fblvwj301s01swe9.jpg" height="24" alt="">&nbsp;运动控</h3>
+     <hr>
+   </div>
+
+   <div class="product">
+     <div class="container">
+       <div class="row">
+         <div class="col-md-3" id="shangpin-1">
+           <a class="item-mask-href" href=""></a>
+             <img class="sort-img" src="https://ws3.sinaimg.cn/large/006tKfTcgy1ffz48jx7cjj30zc1hcwx6.jpg" alt="" />
+           </div>
+
+           <div class="col-md-6">
+             <div class="col-md-4">
+               <div class="row">
+                 <div class="item_hover">
+                   <a href="#"><img class="sort-img" src="https://ws3.sinaimg.cn/large/006tKfTcly1ffz2ncebm7j309q09qq4h.jpg" alt="" /></a>
+                   <div class="floor_goods">
+                     <span class="text_point">男士牛仔服</span>
+                     <span class="tm-price">￥888</span> <span>促销价</span> <span style="color:#c00">￥688</span>
+                   </div>
+                   <a target="_blank" href="https://gate.jd.com/InitCart.aspx?pid=10108886864&amp;pcount=1&amp;ptype=1" class="item_buy">
+                     <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;加入购物车</span>
+                   </a>
+                 </div>
+               </div>
+             </div>
+             <div class="col-md-4">
+               <div class="row">
+                 <div class="item_hover">
+                   <a href="#"><img class="sort-img" src="https://ws3.sinaimg.cn/large/006tKfTcly1ffz2ncebm7j309q09qq4h.jpg" alt="" /></a>
+                   <div class="floor_goods">
+                     <span class="text_point">男士牛仔服</span>
+                     <span class="tm-price">￥888</span> <span>促销价</span> <span style="color:#c00">￥688</span>
+                   </div>
+                   <a target="_blank" href="https://gate.jd.com/InitCart.aspx?pid=10108886864&amp;pcount=1&amp;ptype=1" class="item_buy">
+                     <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;加入购物车</span>
+                   </a>
+                 </div>
+               </div>
+             </div>
+             <div class="col-md-4">
+               <div class="row">
+                 <div class="item_hover">
+                   <a href="#"><img class="sort-img" src="https://ws3.sinaimg.cn/large/006tKfTcly1ffz2ncebm7j309q09qq4h.jpg" alt="" /></a>
+                   <div class="floor_goods">
+                     <span class="text_point">男士牛仔服</span>
+                     <span class="tm-price">￥888</span> <span>促销价</span> <span style="color:#c00">￥688</span>
+                   </div>
+                   <a target="_blank" href="https://gate.jd.com/InitCart.aspx?pid=10108886864&amp;pcount=1&amp;ptype=1" class="item_buy">
+                     <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;加入购物车</span>
+                   </a>
+                 </div>
+               </div>
+             </div>
+             <div class="col-md-4">
+               <div class="row">
+                 <div class="item_hover">
+                   <a href="#"><img class="sort-img" src="https://ws3.sinaimg.cn/large/006tKfTcly1ffz2ncebm7j309q09qq4h.jpg" alt="" /></a>
+                   <div class="floor_goods">
+                     <span class="text_point">男士牛仔服</span>
+                     <span class="tm-price">￥888</span> <span>促销价</span> <span style="color:#c00">￥688</span>
+                   </div>
+                   <a target="_blank" href="https://gate.jd.com/InitCart.aspx?pid=10108886864&amp;pcount=1&amp;ptype=1" class="item_buy">
+                     <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;加入购物车</span>
+                   </a>
+                 </div>
+               </div>
+             </div>
+             <div class="col-md-4">
+               <div class="row">
+                 <div class="item_hover">
+                   <a href="#"><img class="sort-img" src="https://ws3.sinaimg.cn/large/006tKfTcly1ffz2ncebm7j309q09qq4h.jpg" alt="" /></a>
+                   <div class="floor_goods">
+                     <span class="text_point">男士牛仔服</span>
+                     <span class="tm-price">￥888</span> <span>促销价</span> <span style="color:#c00">￥688</span>
+                   </div>
+                   <a target="_blank" href="https://gate.jd.com/InitCart.aspx?pid=10108886864&amp;pcount=1&amp;ptype=1" class="item_buy">
+                     <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;加入购物车</span>
+                   </a>
+                 </div>
+               </div>
+             </div>
+             <div class="col-md-4">
+               <div class="row">
+                 <div class="item_hover">
+                   <a href="#"><img class="sort-img" src="https://ws3.sinaimg.cn/large/006tKfTcly1ffz2ncebm7j309q09qq4h.jpg" alt="" /></a>
+                   <div class="floor_goods">
+                     <span class="text_point">男士牛仔服</span>
+                     <span class="tm-price">￥888</span> <span>促销价</span> <span style="color:#c00">￥688</span>
+                   </div>
+                   <a target="_blank" href="https://gate.jd.com/InitCart.aspx?pid=10108886864&amp;pcount=1&amp;ptype=1" class="item_buy">
+                     <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;加入购物车</span>
+                   </a>
+                 </div>
+               </div>
+             </div>
+           </div>
+
+             <div class="col-md-3" id="shangpin-1">
+               <div class="redge">
+                 <ul class="rHot ">
+                   <li><a href="#">运动套装</a></li>
+                    <li><a href="#">运动护具</a></li>
+                    <li><a href="#">运动鞋</a></li>
+                    <li><a href="#">运动器材</a></li>
+                    <li><a href="#">裁判用具</a></li>
+                    <li><a href="#">奖杯</a></li>
+                  </ul>
+               </div>
+                 <img class="sort-img" src="https://ws2.sinaimg.cn/large/006tKfTcgy1ffz4mxr08xj30bo0boabb.jpg" alt="" />
+               </div>
+             </div>
+           </div>
+           <div class="container" id="tuijian">
+             <h3 class="text-left"><img src="https://ws2.sinaimg.cn/large/006tKfTcgy1ffytulrc9ij301s01swe9.jpg" height="24" alt="">&nbsp;正装秀</h3>
+             <hr>
+           </div>
+
+           <div class="product">
+             <div class="container">
+               <div class="row">
+                 <div class="col-md-3" id="shangpin-1">
+                   <a class="item-mask-href" href=""></a>
+                     <img class="sort-img" src="https://ws2.sinaimg.cn/large/006tKfTcgy1ffz51028spj30zc1hckfp.jpg" alt="" />
+                   </div>
+
+                   <div class="col-md-6">
+                     <div class="col-md-4">
+                       <div class="row">
+                         <div class="item_hover">
+                           <a href="#"><img class="sort-img" src="https://ws2.sinaimg.cn/large/006tKfTcgy1ffz53xnf1rj30by0bygmi.jpg" alt="" /></a>
+                           <div class="floor_goods">
+                             <span class="text_point">男士牛仔服</span>
+                             <span class="tm-price">￥888</span> <span>促销价</span> <span style="color:#c00">￥688</span>
+                           </div>
+                           <a target="_blank" href="https://gate.jd.com/InitCart.aspx?pid=10108886864&amp;pcount=1&amp;ptype=1" class="item_buy">
+                             <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;加入购物车</span>
+                           </a>
+                         </div>
+                       </div>
+                     </div>
+                     <div class="col-md-4">
+                       <div class="row">
+                         <div class="item_hover">
+                           <a href="#"><img class="sort-img" src="https://ws2.sinaimg.cn/large/006tKfTcgy1ffz53xnf1rj30by0bygmi.jpg" alt="" /></a>
+                           <div class="floor_goods">
+                             <span class="text_point">男士牛仔服</span>
+                             <span class="tm-price">￥888</span> <span>促销价</span> <span style="color:#c00">￥688</span>
+                           </div>
+                           <a target="_blank" href="https://gate.jd.com/InitCart.aspx?pid=10108886864&amp;pcount=1&amp;ptype=1" class="item_buy">
+                             <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;加入购物车</span>
+                           </a>
+                         </div>
+                       </div>
+                     </div>
+                     <div class="col-md-4">
+                       <div class="row">
+                         <div class="item_hover">
+                           <a href="#"><img class="sort-img" src="https://ws2.sinaimg.cn/large/006tKfTcgy1ffz53xnf1rj30by0bygmi.jpg" alt="" /></a>
+                           <div class="floor_goods">
+                             <span class="text_point">男士牛仔服</span>
+                             <span class="tm-price">￥888</span> <span>促销价</span> <span style="color:#c00">￥688</span>
+                           </div>
+                           <a target="_blank" href="https://gate.jd.com/InitCart.aspx?pid=10108886864&amp;pcount=1&amp;ptype=1" class="item_buy">
+                             <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;加入购物车</span>
+                           </a>
+                         </div>
+                       </div>
+                     </div>
+                     <div class="col-md-4">
+                       <div class="row">
+                         <div class="item_hover">
+                           <a href="#"><img class="sort-img" src="https://ws2.sinaimg.cn/large/006tKfTcgy1ffz53xnf1rj30by0bygmi.jpg" alt="" /></a>
+                           <div class="floor_goods">
+                             <span class="text_point">男士牛仔服</span>
+                             <span class="tm-price">￥888</span> <span>促销价</span> <span style="color:#c00">￥688</span>
+                           </div>
+                           <a target="_blank" href="https://gate.jd.com/InitCart.aspx?pid=10108886864&amp;pcount=1&amp;ptype=1" class="item_buy">
+                             <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;加入购物车</span>
+                           </a>
+                         </div>
+                       </div>
+                     </div>
+                     <div class="col-md-4">
+                       <div class="row">
+                         <div class="item_hover">
+                           <a href="#"><img class="sort-img" src="https://ws2.sinaimg.cn/large/006tKfTcgy1ffz53xnf1rj30by0bygmi.jpg" alt="" /></a>
+                           <div class="floor_goods">
+                             <span class="text_point">男士牛仔服</span>
+                             <span class="tm-price">￥888</span> <span>促销价</span> <span style="color:#c00">￥688</span>
+                           </div>
+                           <a target="_blank" href="https://gate.jd.com/InitCart.aspx?pid=10108886864&amp;pcount=1&amp;ptype=1" class="item_buy">
+                             <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;加入购物车</span>
+                           </a>
+                         </div>
+                       </div>
+                     </div>
+                     <div class="col-md-4">
+                       <div class="row">
+                         <div class="item_hover">
+                           <a href="#"><img class="sort-img" src="https://ws2.sinaimg.cn/large/006tKfTcgy1ffz53xnf1rj30by0bygmi.jpg" alt="" /></a>
+                           <div class="floor_goods">
+                             <span class="text_point">男士牛仔服</span>
+                             <span class="tm-price">￥888</span> <span>促销价</span> <span style="color:#c00">￥688</span>
+                           </div>
+                           <a target="_blank" href="https://gate.jd.com/InitCart.aspx?pid=10108886864&amp;pcount=1&amp;ptype=1" class="item_buy">
+                             <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;加入购物车</span>
+                           </a>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+
+                     <div class="col-md-3" id="shangpin-1">
+                       <div class="redge">
+                         <ul class="rHot ">
+                           <li><a href="#">西服套装</a></li>
+                            <li><a href="#">领带</a></li>
+                            <li><a href="#">腰带</a></li>
+                            <li><a href="#">皮鞋</a></li>
+                            <li><a href="#">配饰</a></li>
+                            <li><a href="#">衬衣</a></li>
+                          </ul>
+                       </div>
+                         <img class="sort-img" src="https://ws1.sinaimg.cn/large/006tKfTcgy1ffz5aucezsj30eg05fwew.jpg" alt="" />
+
+                       </div>
+                     </div>
+                   </div>
+ </div>
+
+ 
+
+<!-- <section id="company">
+  <div class = "container-fluid">
+    <div class="row">
+      <div class="col-sm-4 ">
+        <div class="thumbnail">
+          <img src="http://fullstack-public.oss-cn-qingdao.aliyuncs.com/2017-04-15-Screenshot%20at%20Apr%2015%2021-43-31.png" alt="search" class = "img-thumbnail">
+          <div class="caption">
+            <h3>北京朝阳建外SOHO</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 ">
+        <div class="thumbnail">
+          <img src="http://fullstack-public.oss-cn-qingdao.aliyuncs.com/2017-04-15-Screenshot%20at%20Apr%2015%2021-43-48.png" alt="bid" class = "img-thumbnail">
+          <div class="caption">
+            <h3>info@18koffer.com</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 ">
+        <div class="thumbnail">
+          <img src="http://fullstack-public.oss-cn-qingdao.aliyuncs.com/2017-04-15-Screenshot%20at%20Apr%2015%2021-44-00.png" alt="heart" class = "img-thumbnail">
+          <div class="caption">
+            <h3>010-12344321</h3>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+</section> -->
