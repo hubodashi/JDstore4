@@ -21,6 +21,37 @@
       <% else %>
        已销售一空，无法购买
       <% end %>
+      <%= link_to("评价", new_product_post_path(@product), class: "btn btn-primary btn-lg btn-info")%>
     </div>
   </div>
+</div>
+<!-- ----------------------评价内容------------------ -->
+   <table class="table">
+    <thead>
+     <tr>
+        <th>评价内容</th>
+        <th>发表者</th>
+        <th>发表时间</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @posts.each do |post| %>
+        <tr>
+          <td><%= post.content %></td>
+          <td><%= post.user.email %></td>
+          <td><%= post.created_at %></td>
+          <td>
+            <% if current_user.admin? %>
+            <%= link_to("Delete", admin_post_path(post),    class: "btn btn-sm btn-default",
+                   method: :delete, data: { confirm: "Are you sure?" } )%>
+
+            <% end %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<div class="text-center">
+   <%= will_paginate @posts %>
 </div>

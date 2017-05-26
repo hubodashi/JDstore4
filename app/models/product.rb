@@ -14,6 +14,7 @@
 
 class Product < ApplicationRecord
   has_many :favorites
+  has_many :posts
   belongs_to :category
   has_many :users, through: :favorites, source: :user
   mount_uploader :image, ImageUploader

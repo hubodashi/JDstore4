@@ -8,6 +8,7 @@ class ProductsController < ApplicationController
  end
  def show
    @product = Product.find(params[:id])
+   @posts = @product.posts.order("created_at DESC").paginate(:page => params[:page], :per_page => 5)
  end
  def add_to_cart
    @product = Product.find(params[:id])
