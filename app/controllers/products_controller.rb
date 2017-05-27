@@ -1,7 +1,7 @@
 class ProductsController < ApplicationController
  before_action :validate_search_key, only: [:search]
  def index
-   @products = Product.all.order("position ASC").paginate(:page => params[:page], :per_page => 5)
+   @products = Product.where(:is_hidden => false).order("position ASC").paginate(:page => params[:page], :per_page => 5)
   if params[:favorite] == "yes"
      @products = current_user.products.paginate(:page => params[:page], :per_page => 5)
   end
@@ -65,4 +65,8 @@ end
     { :title_cont => query_string }
   end
   # <------------------------------------------------------------->
+  def product_params
+    params.require(:product).permit(:title, :description, :quantity, :price, :image, :category_id, :is_hidden)
+  end
+
 end

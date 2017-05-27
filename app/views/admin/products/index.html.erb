@@ -28,6 +28,11 @@
           <% end %>
         </td>
         <td>
+          <% if product.is_hidden %>
+             (Hidden)
+          <% else %>
+             (Public)
+          <% end %>
           <%= product.title %>
         </td>
         <td>
