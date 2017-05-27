@@ -32,6 +32,16 @@ def quit_favorite
   @product.save
   redirect_to :back, alert: "成功取消收藏!"
 end
+def upvote
+  @product = Product.find(params[:id])
+  if !current_user.is_voter_of?(@product)
+    current_user.like!(@product)
+    flash[:notice]= "您已点赞了该商品"
+  else
+    flash[:warning]= "您已点赞过该商品，无法重复点赞"
+  end
+  redirect_to :back
+end
  # <----------------------制作搜索功能--------------------------------->
  def search
     if @query_string.present?

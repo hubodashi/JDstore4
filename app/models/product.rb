@@ -17,6 +17,8 @@ class Product < ApplicationRecord
   has_many :posts
   belongs_to :category
   has_many :users, through: :favorites, source: :user
+  has_many :goods_likes #建立product和user之间的多对多关系
+  has_many :goods_voters, through: :goods_likes, source: :user #product可以知道是哪些user点赞了它
   mount_uploader :image, ImageUploader
   acts_as_list
 end

@@ -15,6 +15,15 @@
     </div>
     <div> 数量 : <%= @product.quantity %> </div>
     <div class="product-price"> ￥ <%= @product.price %> </div>
+    <div class="upvote">
+     <%= link_to upvote_product_path(@product), method: :post do %>
+     <div class="pi-thumbs-up">
+     赞: <i class="fa fa-thumbs-up fa-lg" , style="color:#ff5722;"></i>
+
+      <%= @product.goods_voters.count %>
+       </div>
+      <% end %>
+   </div>
     <div class="pull-right">
       <% if @product.quantity.present? && @product.quantity > 0 %>
       <%= link_to("加入购物车", add_to_cart_product_path(@product), :method => :post, :class => "btn btn-primary btn-lg btn-danger") %>
