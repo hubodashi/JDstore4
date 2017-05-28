@@ -23,4 +23,5 @@ class Product < ApplicationRecord
   has_many :goods_voters, through: :goods_likes, source: :user #product可以知道是哪些user点赞了它
   mount_uploader :image, ImageUploader
   acts_as_list
+  scope :published, -> { where(is_hidden: false) }
 end

@@ -1,11 +1,16 @@
 class ProductsController < ApplicationController
  before_action :validate_search_key, only: [:search]
  def index
-   @products = Product.where(:is_hidden => false).order("position ASC").paginate(:page => params[:page], :per_page => 5)
-  if params[:favorite] == "yes"
-     @products = current_user.products.paginate(:page => params[:page], :per_page => 5)
-  end
+   @products = case params[:order]
+   when 'by_price'
+     Product.published.order('price DESC').paginate(:page => params[:page], :per_page => 5)
+   else
+     Product.published.order('created_at DESC').paginate(:page => params[:page], :per_page => 5)
+   end
+ if params[:favorite] == "yes"
+    @products = current_user.products.paginate(:page => params[:page], :per_page => 5)
  end
+end
  def show
    @product = Product.find(params[:id])
    @photos = @product.photos.all
