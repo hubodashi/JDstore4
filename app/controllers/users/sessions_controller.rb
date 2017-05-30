@@ -23,6 +23,7 @@ class Users::SessionsController < Devise::SessionsController
   #   devise_parameter_sanitizer.permit(:sign_in, keys: [:attribute])
   # end
   prepend_before_action :valify_captcha!, only: [:create]
+  after_action :prepare_intercom_shutdown, only: [:destroy]
 
   def valify_captcha!
     unless verify_rucaptcha?
@@ -31,4 +32,9 @@ class Users::SessionsController < Devise::SessionsController
     end
     true
   end
+end
+
+protected
+def prepare_intercom_shutdown
+  IntercomRails::ShutdownHelper.prepare_intercom_shutdown(session)
 end
