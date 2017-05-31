@@ -64,6 +64,7 @@
       background-color: #FFE0B2;
       color: #212121;
   }
+  //图片轮播
   body{
   font-family:simsun, STSong;
 }
@@ -80,34 +81,34 @@
 }
 
 
-.search{
-  //background-color: #B28435 !important;
-  //border-color: #B28435 !important;
-}
-.search .form-group{
-  margin-bottom: 0;
-}
-
-.btn-search{
-  color: #fff !important;
-}
-
-.search-hot ul{
-  list-style: none;
-  padding-left: 0;
-
-}
-.search-hot li{
-  display: inline-block;
-  //margin-right: 12px;
-  margin: 5px;
-
-}
-.search-hot li a{
-  color: #999;
-  text-decoration: none;
-
-}
+// .search{
+//   //background-color: #B28435 !important;
+//   //border-color: #B28435 !important;
+// }
+// .search .form-group{
+//   margin-bottom: 0;
+// }
+//
+// .btn-search{
+//   color: #fff !important;
+// }
+//
+// .search-hot ul{
+//   list-style: none;
+//   padding-left: 0;
+//
+// }
+// .search-hot li{
+//   display: inline-block;
+//   //margin-right: 12px;
+//   margin: 5px;
+//
+// }
+// .search-hot li a{
+//   color: #999;
+//   text-decoration: none;
+//
+// }
 
 .product-index li{
   font-size: 16px;
@@ -168,7 +169,7 @@ h3{
 .item_hover{
   position:relative;
   float:left;
-  width:181px;
+  width:250px;
   //height:220px;
   border:1px solid #f2f2f2;
   overflow:hidden;
@@ -224,11 +225,11 @@ color: #6a6a6a;
 
 }
 .floor_goods .text_point {
-//padding:5px 0 0;
-//max-width:100%;
-//_width:178px;
+// padding:5px 0 0;
+// max-width:100%;
+// _width:178px;
 
-font-size: 12px;
+font-size: 20px;
 white-space:nowrap;
 text-overflow:ellipsis;
 overflow:hidden;
@@ -237,7 +238,7 @@ display:block;
 
 .tm-price{
 text-decoration: line-through;
-//font-size: 14px;
+// font-size: 20px;
 }
 
 .redge {
