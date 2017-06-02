@@ -33,12 +33,7 @@ Product.create!(title: "牛仔半袖",
                 image: open("https://ws4.sinaimg.cn/large/006tNbRwly1fg4jf218j9j30by0byq45.jpg")
                 )
 
-Product.create!(title: "牛仔短裤",
-                 description: "清凉休闲",
-                 price: 199,
-                 quantity: 20,
-                 image: open("https://ws1.sinaimg.cn/large/006tNc79gy1fg7fbcs7zaj30m80m8dlp.jpg")
-                 )
+
 
 Product.create!(title: "百搭鞋",
                 description: "舒适透气",
@@ -111,42 +106,40 @@ Photo.create!(product_id:2,
               avatar: open("https://ws4.sinaimg.cn/large/006tNbRwly1fg4jf218j9j30by0byq45.jpg")
               )
 
-Photo.create!(product_id:3,
-              avatar: open("https://ws2.sinaimg.cn/large/006tNbRwly1fg4jaor4lnj30by0bymyb.jpg")
-              )
 
-Photo.create!(product_id:4,
+
+Photo.create!(product_id:3,
               avatar: open("https://ws4.sinaimg.cn/large/006tNbRwly1fg4jaogq0ej30by0byjsg.jpg")
               )
 
-Photo.create!(product_id:5,
+Photo.create!(product_id:4,
               avatar: open("https://ws3.sinaimg.cn/large/006tNbRwly1fg4jm8mp30j30by0byt9r.jpg")
               )
 
-Photo.create!(product_id:6,
+Photo.create!(product_id:5,
               avatar: open("https://ws3.sinaimg.cn/large/006tNbRwly1fg4jm8yg2kj30by0bydgd.jpg")
               )
 
-Photo.create!(product_id:7,
+Photo.create!(product_id:6,
               avatar: open("https://ws3.sinaimg.cn/large/006tNbRwly1fg4jm8riw1j30by0byjrq.jpg")
               )
 
-Photo.create!(product_id:8,
+Photo.create!(product_id:7,
               avatar: open("https://ws1.sinaimg.cn/large/006tNbRwly1fg4jm92s8bj30by0byt8o.jpg")
               )
 
-Photo.create!(product_id:9,
+Photo.create!(product_id:8,
               avatar: open("https://ws3.sinaimg.cn/large/006tNbRwly1fg4ju871psj30by0bymxs.jpg")
               )
 
-Photo.create!(product_id:10,
+Photo.create!(product_id:9,
               avatar: open("https://ws3.sinaimg.cn/large/006tNbRwly1fg4ju825bej30by0byaal.jpg")
               )
 
-Photo.create!(product_id:11,
+Photo.create!(product_id:10,
               avatar: open("https://ws1.sinaimg.cn/large/006tNbRwly1fg4ju7wejaj30by0by0t9.jpg")
               )
 
-Photo.create!(product_id:12,
+Photo.create!(product_id:11,
               avatar: open("https://ws4.sinaimg.cn/large/006tNbRwly1fg4ju7lhk1j30by0byaac.jpg")
               )
