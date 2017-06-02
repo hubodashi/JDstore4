@@ -19,7 +19,9 @@
 //= require bootstrap/dropdown
 //= require bootstrap/modal
 //= require bootstrap/collapse
+ //= require bootstrap/carousel
 //= require_tree .
+
 
 $(document).on('turbolinks:load', function() {
 
@@ -37,3 +39,10 @@ function slideUpAlert() {
     $(this).remove();
   });
 }
+
+
+
+$(document).ready(function() {
+  $('#myCarousel').carousel({interval: 2000});
+
+});
