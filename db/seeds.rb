@@ -37,7 +37,7 @@ Product.create!(title: "牛仔短裤",
                  description: "清凉休闲",
                  price: 199,
                  quantity: 20,
-                 image: open("https://ws2.sinaimg.cn/large/006tNbRwly1fg4jaor4lnj30by0bymyb.jpg")
+                 image: open("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1496437186738&di=49ad42c809e127cb94cc170be6765d23&imgtype=0&src=http%3A%2F%2Fimg13.360buyimg.com%2FpopWaterMark%2Fjfs%2Ft1213%2F364%2F889168263%2F226720%2Fafc638e7%2F55532b21N12457bf0.jpg")
                  )
 
 Product.create!(title: "百搭鞋",
