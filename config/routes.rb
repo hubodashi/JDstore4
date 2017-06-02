@@ -30,9 +30,11 @@ Rails.application.routes.draw do
        member do
          post :move_up
          post :move_down
+         post :publish
+         post :hide
        end
      end
-      resources :orders do
+    resources :orders do
      member do
        post :cancel
        post :ship

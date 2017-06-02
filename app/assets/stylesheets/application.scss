@@ -10,8 +10,9 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
  *= require_self
+ *= require font-awesome
+ *= require_tree .
  */
  @import "bootstrap-sprockets";
  @import "bootstrap";
@@ -179,9 +180,20 @@
   border-radius: 0px;
 }
 
+.custab{
+  border: 1px solid #ccc;
 
+  padding: 5px;
+  margin: 5% 0;
+  box-shadow: 3px 3px 2px #ccc;
 
+  transition: 0.5s;
+}
 
+.custab:hover{
+  box-shadow: 3px 3px 0px transparent;
+  transition: 0.5s;
+}
 
  //---------Navbar---------
 

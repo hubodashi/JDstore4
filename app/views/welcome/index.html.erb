@@ -45,17 +45,15 @@
 
   <div class="container">
     <div class="row">
-
-        <div class="item_hover">
-         <h3 class="text-left"><img src="https://ws2.sinaimg.cn/large/006tKfTcgy1ffytq03ukpj301s01st8h.jpg" height="24" alt="">&nbsp;牛仔范 <a class="text-right">更多>></a></h3>
-         <hr>
-        </div>
-
-
+      <div class="col-md-6">
+        <h3 class="text-left"><img src="https://ws2.sinaimg.cn/large/006tKfTcgy1ffyu7fblvwj301s01swe9.jpg" height="24" alt="">&nbsp;牛仔范</h3>
+      </div>
+      <div class="col-md-6">
+       <h3 class="text-right"><%= link_to("更多>>", products_path(category: "牛仔范")) %></h3>
+      </div>
     </div>
-  </div>
-
-
+   <hr>
+ </div>
 
  <div class="product">
    <div class="container">
@@ -67,8 +65,8 @@
              <span class="text_point">爆款牛仔服</span>
              <span style="color:#c00">￥328</span>
            </div>
-           <a target="_blank" href="https://ws1.sinaimg.cn/large/006tKfTcgy1ffysia6y0cj30ry0zkjxi.jpg" class="item_buy">
-             <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;加入购物车</span>
+           <a target="_blank" href="/products/1" class="item_buy">
+             <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;立即选购</span>
            </a>
          </div>
        </div>
@@ -79,8 +77,8 @@
              <span class="text_point">牛仔半袖</span>
              <span style="color:#c00">￥128</span>
            </div>
-           <a target="_blank" href="https://ws1.sinaimg.cn/large/006tKfTcgy1ffysia6y0cj30ry0zkjxi.jpg" class="item_buy">
-             <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;加入购物车</span>
+           <a target="_blank" href="/products/2" class="item_buy">
+             <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;立即选购</span>
            </a>
          </div>
        </div>
@@ -91,8 +89,8 @@
              <span class="text_point">牛仔短裤</span>
              <span style="color:#c00">￥199</span>
            </div>
-           <a target="_blank" href="https://ws1.sinaimg.cn/large/006tKfTcgy1ffysia6y0cj30ry0zkjxi.jpg" class="item_buy">
-             <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;加入购物车</span>
+           <a target="_blank" href="/products/3" class="item_buy">
+             <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;立即选购</span>
            </a>
          </div>
        </div>
@@ -103,8 +101,8 @@
              <span class="text_point">百搭鞋</span>
              <span style="color:#c00">￥299</span>
            </div>
-           <a target="_blank" href="https://ws1.sinaimg.cn/large/006tKfTcgy1ffysia6y0cj30ry0zkjxi.jpg" class="item_buy">
-             <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;加入购物车</span>
+           <a target="_blank" href="/products/4" class="item_buy">
+             <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;立即选购</span>
            </a>
          </div>
        </div>
@@ -113,9 +111,16 @@
    </div>
 
    <div class="container">
-     <h3 class="text-left"><img src="https://ws2.sinaimg.cn/large/006tKfTcgy1ffyu7fblvwj301s01swe9.jpg" height="24" alt="">&nbsp;运动控</h3>
-     <hr>
-   </div>
+     <div class="row">
+       <div class="col-md-6">
+         <h3 class="text-left"><img src="https://ws2.sinaimg.cn/large/006tKfTcgy1ffyu7fblvwj301s01swe9.jpg" height="24" alt="">&nbsp;运动控</h3>
+       </div>
+       <div class="col-md-6">
+        <h3 class="text-right"><%= link_to("更多>>", products_path(category: "运动控")) %></h3>
+       </div>
+     </div>
+    <hr>
+  </div>
 
    <div class="product">
      <div class="container">
@@ -127,8 +132,8 @@
                <span class="text_point">夏季防风运动衣</span>
                <span style="color:#c00">￥199</span>
              </div>
-             <a target="_blank" href="https://ws1.sinaimg.cn/large/006tKfTcgy1ffysia6y0cj30ry0zkjxi.jpg" class="item_buy">
-               <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;加入购物车</span>
+             <a target="_blank" href="/products/5" class="item_buy">
+               <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;立即选购</span>
              </a>
            </div>
          </div>
@@ -139,8 +144,8 @@
                <span class="text_point">室内多功能运动器械</span>
                <span style="color:#c00">￥1288</span>
              </div>
-             <a target="_blank" href="https://ws1.sinaimg.cn/large/006tKfTcgy1ffysia6y0cj30ry0zkjxi.jpg" class="item_buy">
-               <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;加入购物车</span>
+             <a target="_blank" href="/products/6" class="item_buy">
+               <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;立即选购</span>
              </a>
            </div>
          </div>
@@ -151,8 +156,8 @@
                <span class="text_point">nike休闲跑鞋</span>
                <span style="color:#c00">￥799</span>
              </div>
-             <a target="_blank" href="https://ws1.sinaimg.cn/large/006tKfTcgy1ffysia6y0cj30ry0zkjxi.jpg" class="item_buy">
-               <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;加入购物车</span>
+             <a target="_blank" href="/products/7" class="item_buy">
+               <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;立即选购</span>
              </a>
            </div>
          </div>
@@ -163,8 +168,8 @@
                <span class="text_point">跑步健身套装</span>
                <span style="color:#c00">￥388</span>
              </div>
-             <a target="_blank" href="https://ws1.sinaimg.cn/large/006tKfTcgy1ffysia6y0cj30ry0zkjxi.jpg" class="item_buy">
-               <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;加入购物车</span>
+             <a target="_blank" href="/products/8" class="item_buy">
+               <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;立即选购</span>
              </a>
            </div>
          </div>
@@ -172,61 +177,69 @@
       </div>
      </div>
 
-           <div class="container" id="tuijian">
-             <h3 class="text-left"><img src="https://ws2.sinaimg.cn/large/006tKfTcgy1ffytulrc9ij301s01swe9.jpg" height="24" alt="">&nbsp;正装秀</h3>
-             <hr>
-           </div>
-           <div class="product">
-             <div class="container">
-               <div class="row">
-                 <div class="col-md-3">
-                   <div class="item_hover">
-                     <img class="sort-img" src="https://ws3.sinaimg.cn/large/006tNbRwly1fg4ju871psj30by0bymxs.jpg" alt="" />
-                     <div class="floor_goods">
-                       <span class="text_point">商务西服套装</span>
-                       <span style="color:#c00">￥688</span>
-                     </div>
-                     <a target="_blank" href="https://ws1.sinaimg.cn/large/006tKfTcgy1ffysia6y0cj30ry0zkjxi.jpg" class="item_buy">
-                       <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;加入购物车</span>
-                     </a>
-                   </div>
-                 </div>
-                 <div class="col-md-3">
-                   <div class="item_hover">
-                     <img class="sort-img" src="https://ws3.sinaimg.cn/large/006tNbRwly1fg4ju825bej30by0byaal.jpg" alt="" />
-                     <div class="floor_goods">
-                       <span class="text_point">燕尾服套装</span>
-                       <span style="color:#c00">￥799</span>
-                     </div>
-                     <a target="_blank" href="https://ws1.sinaimg.cn/large/006tKfTcgy1ffysia6y0cj30ry0zkjxi.jpg" class="item_buy">
-                       <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;加入购物车</span>
-                     </a>
-                   </div>
-                 </div>
-                 <div class="col-md-3">
-                   <div class="item_hover">
-                     <img class="sort-img" src="https://ws1.sinaimg.cn/large/006tNbRwly1fg4ju7wejaj30by0by0t9.jpg" alt="" />
-                     <div class="floor_goods">
-                       <span class="text_point">夏季纯棉免熨男衬衣</span>
-                       <span style="color:#c00">￥288</span>
-                     </div>
-                     <a target="_blank" href="https://ws1.sinaimg.cn/large/006tKfTcgy1ffysia6y0cj30ry0zkjxi.jpg" class="item_buy">
-                       <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;加入购物车</span>
-                     </a>
-                   </div>
-                 </div>
-                 <div class="col-md-3">
-                   <div class="item_hover">
-                     <img class="sort-img" src="https://ws4.sinaimg.cn/large/006tNbRwly1fg4ju7lhk1j30by0byaac.jpg" alt="" />
-                     <div class="floor_goods">
-                       <span class="text_point">花花公子商务皮鞋</span>
-                       <span class="tm-price">￥888</span> <span>促销价</span> <span style="color:#c00">￥688</span>
-                     </div>
-                     <a target="_blank" href="https://ws1.sinaimg.cn/large/006tKfTcgy1ffysia6y0cj30ry0zkjxi.jpg" class="item_buy">
-                       <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;加入购物车</span>
-                     </a>
-                   </div>
-                 </div>
-                </div>
-              </div>
+     <div class="container">
+       <div class="row">
+         <div class="col-md-6">
+           <h3 class="text-left"><img src="https://ws2.sinaimg.cn/large/006tKfTcgy1ffyu7fblvwj301s01swe9.jpg" height="24" alt="">&nbsp;正装秀</h3>
+         </div>
+         <div class="col-md-6">
+          <h3 class="text-right"><%= link_to("更多>>", products_path(category: "正装秀")) %></h3>
+         </div>
+       </div>
+      <hr>
+    </div>
+
+   <div class="product">
+     <div class="container">
+       <div class="row">
+         <div class="col-md-3">
+           <div class="item_hover">
+             <img class="sort-img" src="https://ws3.sinaimg.cn/large/006tNbRwly1fg4ju871psj30by0bymxs.jpg" alt="" />
+             <div class="floor_goods">
+               <span class="text_point">商务西服套装</span>
+               <span style="color:#c00">￥688</span>
              </div>
+             <a target="_blank" href="/products/9" class="item_buy">
+               <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;立即选购</span>
+             </a>
+           </div>
+         </div>
+         <div class="col-md-3">
+           <div class="item_hover">
+             <img class="sort-img" src="https://ws3.sinaimg.cn/large/006tNbRwly1fg4ju825bej30by0byaal.jpg" alt="" />
+             <div class="floor_goods">
+               <span class="text_point">燕尾服套装</span>
+               <span style="color:#c00">￥799</span>
+             </div>
+             <a target="_blank" href="/products/10" class="item_buy">
+               <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;立即选购</span>
+             </a>
+           </div>
+         </div>
+         <div class="col-md-3">
+           <div class="item_hover">
+             <img class="sort-img" src="https://ws1.sinaimg.cn/large/006tNbRwly1fg4ju7wejaj30by0by0t9.jpg" alt="" />
+             <div class="floor_goods">
+               <span class="text_point">夏季纯棉免熨男衬衣</span>
+               <span style="color:#c00">￥288</span>
+             </div>
+             <a target="_blank" href="/products/11" class="item_buy">
+               <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;立即选购</span>
+             </a>
+           </div>
+         </div>
+         <div class="col-md-3">
+           <div class="item_hover">
+             <img class="sort-img" src="https://ws4.sinaimg.cn/large/006tNbRwly1fg4ju7lhk1j30by0byaac.jpg" alt="" />
+             <div class="floor_goods">
+               <span class="text_point">花花公子商务皮鞋</span>
+               <span class="tm-price">￥888</span> <span>促销价</span> <span style="color:#c00">￥688</span>
+             </div>
+             <a target="_blank" href="/products/12" class="item_buy">
+               <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;立即选购</span>
+             </a>
+           </div>
+         </div>
+        </div>
+      </div>
+     </div>

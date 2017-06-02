@@ -2,7 +2,8 @@
 <div class="pull-right" style="padding-bottom: 20px;">
   <%= link_to("新增产品", new_admin_product_path, class: "btn btn-primary btn-sm") %>
 </div>
-<table class="table table-bordered">
+<div class="panel-primary">
+<table class="table table-bordered table-striped custab">
   <thead>
     <tr>
       <th>No.</th>
@@ -28,12 +29,12 @@
           <% end %>
         </td>
         <td>
-          <% if product.is_hidden %>
-             (Hidden)
-          <% else %>
-             (Public)
-          <% end %>
           <%= product.title %>
+          <% if product.is_hidden %>
+           <%= link_to("Publish", publish_admin_product_path(product) , :method => :post, :class => "btn btn-xs btn-success") %>
+          <% else %>
+           <%= link_to("Hide", hide_admin_product_path(product), :method => :post,  :class => "btn btn-xs btn-warning") %>
+          <% end %>
         </td>
         <td>
           <%= product.price %>
@@ -48,6 +49,7 @@
     <% end %>
   </tbody>
 </table>
+</div>
 <div class="text-center">
   <%= will_paginate @products %>
 </div>
