@@ -1,26 +1,30 @@
 <h2>订单列表 </h2>
 <br/>
 <div class="panel panel-primary">
-<table class="table table-bordered">
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>生成时间</th>
+ <div class="panel-heading"></div>  
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>生成时间</th>
 
-    </tr>
-  </thead>
-  <tbody>
+      </tr>
+    </thead>
+    <tbody>
 
-    <% @orders.each do |order| %>
-    <tr>
-      <td> <%= link_to(order.id, order_path(order.token)) %> </td>
-      <td> <%= order.created_at.to_s(:long) %> </td>
-    </tr>
-    <% end %>
+      <% @orders.each do |order| %>
+      <tr>
+        <td> <%= link_to(order.id, order_path(order.token)) %> </td>
+        <td> <%= order.created_at.to_s(:long) %> </td>
+      </tr>
+      <% end %>
 
-  </tbody>
-</table>
+    </tbody>
+  </table>
 </div>
   <div class="text-center">
     <%= will_paginate @orders %>
   </div>
+
+
+  <div class="panel panel-info">
