@@ -99,7 +99,7 @@ Product.create!(title: "夏季衬衣",
                )
 
 Product.create!(title: "花花公子商务皮鞋",
-              description: "舒适透气"
+              description: "舒适透气",
               price: 688,
               quantity: 15,
               image: open("/images/006tNbRwly1fg4ju7lhk1j30by0byaac.jpg")
