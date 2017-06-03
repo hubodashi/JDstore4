@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-Category.create(name: "牛仔范"
+Category.create(name: "牛仔范")
 Category.create(name: "运动控")
 Category.create(name: "正装秀")
 
