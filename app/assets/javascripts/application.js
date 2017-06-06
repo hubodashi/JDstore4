@@ -11,12 +11,36 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
+
 //= require turbolinks
 //= require bootstrap/alert
 //= require bootstrap/dropdown
+//= require bootstrap/modal
+//= require bootstrap/collapse
+ //= require bootstrap/carousel
 //= require_tree .
-//= require bootstrap/carousel
+
+
+$(document).on('turbolinks:load', function() {
+
+
+  // 收起通知
+  slideUpAlert();
+
+
+});
+
+// 收起通知信息
+function slideUpAlert() {
+  // 消息停留2000毫秒（2秒），消失动画时间250毫秒
+  $(".alert").delay(2000).slideUp(250, function() {
+    $(this).remove();
+  });
+}
+
+
 
 $(document).ready(function() {
   $('#myCarousel').carousel({interval: 2000});

@@ -10,17 +10,31 @@ Rails.application.routes.draw do
   resources :cart_items
   resources :products do
     member do
+     post :upvote
+    end
+    resources :posts
+    member do
       post :add_to_cart
+    end
+    collection do
+     get :search
+    end
+    member do
+     post :add_to_favorite
+     post :quit_favorite
     end
   end
   namespace :admin do
+     resources :posts
      resources :products do
        member do
          post :move_up
          post :move_down
+         post :publish
+         post :hide
        end
      end
-      resources :orders do
+    resources :orders do
      member do
        post :cancel
        post :ship
@@ -43,5 +57,5 @@ end
    end
  end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  root 'products#index'
+  root 'welcome#index'
 end
