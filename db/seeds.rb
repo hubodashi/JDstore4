@@ -272,6 +272,7 @@ Product.create!(id:29,
                price: 799,
                quantity: 100,
                )
+
 Product.create!(id:30,
               title: "NIKE COURT LITE 男子网球运动鞋",
               description: "轻盈缓震 经久耐磨 透气舒适",
@@ -459,7 +460,6 @@ Product.create!(id:48,
 # Photo.create!(product_id:5,avatar: open('https://ws4.sinaimg.cn/large/006tNbRwly1fg4jf218j9j30by0byq45.jpg'))
 #
 # Photo.create!(product_id:6,avatar: open('https://ws3.sinaimg.cn/large/006tNbRwly1fgbhyh35ogj30by0bygmg.jpg'))
-# Photo.create!(product_id:6,avatar: open('https://ws4.sinaimg.cn/large/006tNbRwly1fgbhyazm6oj30by0bygmp.jpg'))
 # Photo.create!(product_id:6,avatar: open('https://ws4.sinaimg.cn/large/006tNbRwly1fgbhyazm6oj30by0bygmp.jpg'))
 #
 # Photo.create!(product_id:7,avatar: open('https://ws1.sinaimg.cn/large/006tNbRwly1fgbhuz7fdvj30by0by0tt.jpg'))
