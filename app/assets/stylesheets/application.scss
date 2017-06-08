@@ -568,9 +568,9 @@ padding: 9px 8px 0 8px;
   margin: 7px 7px;
   //border-width: 2px;
   //border-style: groove;
-  border:1px solid #fff;
+  border:1px solid transparent;
   //overflow:hidden;
-  height: 317px;
+  height: 120px;
   width: 208px;
 }
 .product-price:hover{
@@ -699,4 +699,11 @@ html { height: 100%;}
 }
 .footer a {
 	color: #666;
+}
+
+.jumbotron {
+background-image:url('https://ws1.sinaimg.cn/large/006tKfTcgy1fge8kp9a21j31900u0kjl.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+padding-bottom: 110px;
 }
