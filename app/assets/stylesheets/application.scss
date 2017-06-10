@@ -713,6 +713,7 @@ div.backgrounda
 height: 650px;
 background: url('https://ws4.sinaimg.cn/large/006tKfTcgy1fgfej227ulj30x30izqap.jpg') no-repeat;
 background-position: center center;
+background-size: cover;
 border: 1px solid black;
 }
 
@@ -721,6 +722,7 @@ div.backgroundb
 height: 650px;
 background: url('https://ws4.sinaimg.cn/large/006tKfTcgy1fgfej2s7dgj30x30iztge.jpg') no-repeat;
 background-position: center center;
+background-size: cover;
 border: 1px solid black;
 }
 
@@ -729,6 +731,7 @@ div.backgroundc
 height: 650px;
 background: url('https://ws2.sinaimg.cn/large/006tKfTcgy1fgg9h7qc5uj30x30iztfc.jpg') no-repeat;
 background-position: center center;
+background-size: cover;
 border: 1px solid black;
 }
 
@@ -824,4 +827,9 @@ text-align: center;
 font-weight:bold;
 color:#D84315;
 margin: 40px 20px;
+}
+.background
+{
+  // background-color:#4FC3F7;
+  // background-size: cover;
 }
