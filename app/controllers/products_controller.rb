@@ -6,25 +6,25 @@ class ProductsController < ApplicationController
     #  Product.published.order('price DESC').paginate(:page => params[:page], :per_page => 8)
 
      if params[:favorite] == "yes"
-        @products = current_user.products.published.order('price DESC').paginate(:page => params[:page], :per_page => 8)
+        @products = current_user.products.published.order('price DESC').paginate(:page => params[:page], :per_page => 7)
 
      elsif params[:category].blank?
-        @products = Product.published.order('price DESC').paginate(:page => params[:page], :per_page => 8)
+        @products = Product.published.order('price DESC').paginate(:page => params[:page], :per_page => 7)
      else
         @category_id = Category.find_by(name: params[:category]).id #先找到category_id
-        @products = Product.published.where(category_id:  @category_id).order('price DESC').paginate(:page => params[:page], :per_page => 8) #再根据category_id找到相对应的产品。
+        @products = Product.published.where(category_id:  @category_id).order('price DESC').paginate(:page => params[:page], :per_page => 7) #再根据category_id找到相对应的产品。
      end
     else
-     Product.published.order('created_at DESC').paginate(:page => params[:page], :per_page => 8)
+     Product.published.order('created_at DESC').paginate(:page => params[:page], :per_page => 7)
 
      if params[:favorite] == "yes"
-         @products = current_user.products.published.order('created_at DESC').paginate(:page => params[:page], :per_page => 8)
+         @products = current_user.products.published.order('created_at DESC').paginate(:page => params[:page], :per_page => 7)
 
      elsif params[:category].blank?
-        @products = Product.published.order('created_at DESC').paginate(:page => params[:page], :per_page => 8)
+        @products = Product.published.order('created_at DESC').paginate(:page => params[:page], :per_page => 7)
      else
         @category_id = Category.find_by(name: params[:category]).id #先找到category_id
-        @products = Product.published.where(category_id:  @category_id).order('created_at DESC').paginate(:page => params[:page], :per_page => 8) #再根据category_id找到相对应的产品。
+        @products = Product.published.where(category_id:  @category_id).order('created_at DESC').paginate(:page => params[:page], :per_page => 7) #再根据category_id找到相对应的产品。
      end
 
   end
