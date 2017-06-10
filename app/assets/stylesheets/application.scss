@@ -657,8 +657,8 @@ html { height: 100%;}
   background-position: center 80%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  // margin-top: 10px;
+  // margin-bottom: 10px;
   position: relative;
   vertical-align: bottom;
 }
@@ -702,6 +702,7 @@ html { height: 100%;}
 }
 
 .jumbotron {
+margin-top: 10px;
 background-image:url('https://ws1.sinaimg.cn/large/006tKfTcgy1fge8kp9a21j31900u0kjl.jpg');
 background-repeat: no-repeat;
 background-size: cover;
@@ -801,7 +802,7 @@ div.transboxc
 {
 position:absolute;
 left:450px;
-top:40px;
+top:30px;
 width: 400px;
 height: 204px;
 margin:30px;
@@ -830,6 +831,29 @@ margin: 40px 20px;
 }
 .background
 {
-  // background-color:#4FC3F7;
-  // background-size: cover;
+  // background-color:#FFF9C4;
+  margin-top: 10px;
+  background: url('https://ws1.sinaimg.cn/large/006tKfTcgy1fgggdxyex4j30xc0m840o.jpg') no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
+.backgroundd
+{
+  height: 650px;
+  background: url('https://ws1.sinaimg.cn/large/006tKfTcgy1fgggdxyex4j30xc0m840o.jpg') no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.backgroundd h4
+{
+font-family:"Times New Roman",Georgia,Serif;
+// text-align: center;
+font-weight:bold;
+color:#FAFAFA;
+// margin: 40px 20px;
+}
+ @media (min-width: 768px) {
+   .jumbotron {
+     border-radius: 0; //圆角为0
+   }
+ }
