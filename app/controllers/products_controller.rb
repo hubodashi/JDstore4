@@ -12,7 +12,7 @@ class ProductsController < ApplicationController
         @products = Product.published.order('price DESC').paginate(:page => params[:page], :per_page => 8)
      else
         @category_id = Category.find_by(name: params[:category]).id #先找到category_id
-        @products = Product.published.where(category_id:  @category_id).order('price DESC').paginate(:page => params[:page], :per_page => 5) #再根据category_id找到相对应的产品。
+        @products = Product.published.where(category_id:  @category_id).order('price DESC').paginate(:page => params[:page], :per_page => 8) #再根据category_id找到相对应的产品。
      end
     else
      Product.published.order('created_at DESC').paginate(:page => params[:page], :per_page => 8)
