@@ -707,3 +707,121 @@ background-repeat: no-repeat;
 background-size: cover;
 padding-bottom: 110px;
 }
+
+div.backgrounda
+{
+height: 650px;
+background: url('https://ws4.sinaimg.cn/large/006tKfTcgy1fgfej227ulj30x30izqap.jpg') no-repeat;
+background-position: center center;
+border: 1px solid black;
+}
+
+div.backgroundb
+{
+height: 650px;
+background: url('https://ws4.sinaimg.cn/large/006tKfTcgy1fgfej2s7dgj30x30iztge.jpg') no-repeat;
+background-position: center center;
+border: 1px solid black;
+}
+
+div.backgroundc
+{
+height: 650px;
+background: url('https://ws2.sinaimg.cn/large/006tKfTcgy1fgg9h7qc5uj30x30iztfc.jpg') no-repeat;
+background-position: center center;
+border: 1px solid black;
+}
+
+div.transboxa
+{
+position:absolute;
+left:700px;
+top:150px;
+width: 400px;
+height: 204px;
+margin:30px;
+background-color: #ffffff;
+border: 1px solid black;
+/* for IE */
+filter:alpha(opacity=75);
+/* CSS3 standard */
+opacity:0.75;
+}
+div.transboxa h1
+{
+text-align: center;
+font-family:"Times New Roman",Georgia,Serif;
+font-weight:bold;
+color:#FF9800;
+margin: 40px 20px;
+}
+div.transboxa h2
+{
+font-family:"Times New Roman",Georgia,Serif;
+text-align: center;
+font-weight:bold;
+color:#D84315;
+margin: 40px 20px;
+}
+div.transboxb
+{
+position:absolute;
+left:100px;
+top:50px;
+width: 400px;
+height: 204px;
+margin:30px;
+background-color: #ffffff;
+border: 1px solid black;
+/* for IE */
+filter:alpha(opacity=75);
+/* CSS3 standard */
+opacity:0.75;
+}
+div.transboxb h1
+{
+text-align: center;
+font-family:"Times New Roman",Georgia,Serif;
+font-weight:bold;
+color:#FF9800;
+margin: 40px 20px;
+}
+div.transboxb h2
+{
+font-family:"Times New Roman",Georgia,Serif;
+text-align: center;
+font-weight:bold;
+color:#D84315;
+margin: 40px 20px;
+}
+div.transboxc
+{
+position:absolute;
+left:450px;
+top:40px;
+width: 400px;
+height: 204px;
+margin:30px;
+background-color: #ffffff;
+border: 1px solid black;
+/* for IE */
+filter:alpha(opacity=75);
+/* CSS3 standard */
+opacity:0.75;
+}
+div.transboxc h1
+{
+text-align: center;
+font-family:"Times New Roman",Georgia,Serif;
+font-weight:bold;
+color:#FF9800;
+margin: 40px 20px;
+}
+div.transboxc h2
+{
+font-family:"Times New Roman",Georgia,Serif;
+text-align: center;
+font-weight:bold;
+color:#D84315;
+margin: 40px 20px;
+}
